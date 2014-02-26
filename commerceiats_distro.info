@@ -20,6 +20,7 @@ dependencies[] = addressfield
 dependencies[] = admin_menu
 dependencies[] = bean
 dependencies[] = commerce
+dependencies[] = commerce_iats
 dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = ctools

@@ -25,6 +25,10 @@ projects[bean][subdir] = "contrib"
 projects[commerce][version] = "1.8"
 projects[commerce][subdir] = "contrib"
 
+; commerce_iats
+projects[commerce_iats][version] = "2.x-dev"
+projects[commerce_iats][subdir] = "contrib"
+
 ; context requires ctools 1.7+ (jquery_ui & admin recommended)
 projects[context][version] = "3.2"
 projects[context][subdir] = "contrib"
