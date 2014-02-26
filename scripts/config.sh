@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # match your install profile name
-PROJECT=asi
+PROJECT=commerceiats_distro
 
 # pantheon, acquia, generic
 HOSTTYPE=pantheon
 
-SITENAME="Site Name"
+SITENAME="iATS Drupal Commerce"
 
 GITREPO=
