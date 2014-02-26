@@ -33,4 +33,4 @@ dependencies[] = token
 dependencies[] = views
 dependencies[] = views_ui
 
-files[] = ts_build.profile
+files[] = commerceiats_build.profile
