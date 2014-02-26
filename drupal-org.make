@@ -11,51 +11,54 @@ core = 7.x
 
 
 ; admin_menu requires bean
-;projects[admin_menu][version] = ""
+projects[admin_menu][version] = "3.0-rc4"
 projects[admin_menu][subdir] = "contrib"
 
 ; bean requires ctools, entity
-;projects[bean][version] = ""
+projects[bean][version] = "1.7"
 projects[bean][subdir] = "contrib"
 
 ; context requires ctools 1.7+ (jquery_ui & admin recommended)
-;projects[context][version] = ""
+projects[context][version] = "3.2"
 projects[context][subdir] = "contrib"
 
 ; ctools
-;projects[ctools][version] = ""
+projects[ctools][version] = "1.4"
 projects[ctools][subdir] = "contrib"
 
 ; entity
-;projects[entity][version] = ""
+projects[entity][version] = "1.3"
 projects[entity][subdir] = "contrib"
 
 ; entityreference
-;projects[entityreference][version] = ""
+projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = "contrib"
 
 ; features
-;projects[features][version] = ""
+projects[features][version] = "2.0"
 projects[features][subdir] = "contrib"
 
 ; field_collection
-;projects[field_collection][version] = ""
 projects[field_collection][subdir] = "contrib"
+projects[field_collection][download][type] = git
+projects[field_collection][download][revision] = "0fd332e"
+; Patch to fix On unpublished nodes, when saving, it throws a fatal error: Unable to save a field collection item without a valid reference: https://drupal.org/node/2070159
+projects[field_collection][patch][] = "https://drupal.org/files/issues/field_collection-fix_missing_host_entity-2070159-4.patch"
 
 ; pathauto requires token
-;projects[pathauto][version] = ""
+projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = "contrib"
 
 ; strongarm requires ctools
-;projects[strongarm][version] = ""
+projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = "contrib"
 
 ; token
-;projects[token][version] = ""
+projects[token][version] = "1.5"
 projects[token][subdir] = "contrib"
 
 ; views
-;projects[views][version] = ""
+projects[views][version] = "3.7"
 projects[views][subdir] = "contrib"
 
 ;-----------------------------------------
@@ -71,15 +74,15 @@ projects[views][subdir] = "contrib"
 ;-----------------------------------------
 
 ; devel
-;projects[devel][version] = ""
+projects[devel][version] = "1.4"
 projects[devel][subdir] = "developer"
 
 ; diff
-;projects[diff][version] = ""
+projects[diff][version] = "3.2"
 projects[diff][subdir] = "developer"
 
 ; ftools
-;projects[ftools][version] = ""
+projects[ftools][version] = "1.6"
 projects[ftools][subdir] = "developer"
 
 ;-----------------------------------------
