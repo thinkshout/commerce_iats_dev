@@ -1,5 +1,5 @@
-name = ThinkShout Project
-description = Description of ThinkShout Project
+name = Commerce iATS Project
+description = iATS integration into Drupal Commerce
 core = 7.x
 
 ; Core
