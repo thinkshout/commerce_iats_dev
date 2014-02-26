@@ -16,8 +16,10 @@ dependencies[] = rdf
 dependencies[] = taxonomy
 
 ; Contrib
+dependencies[] = addressfield
 dependencies[] = admin_menu
 dependencies[] = bean
+dependencies[] = commerce
 dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = ctools
@@ -28,6 +30,7 @@ dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = field_collection
 dependencies[] = pathauto
+dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = token
 dependencies[] = views

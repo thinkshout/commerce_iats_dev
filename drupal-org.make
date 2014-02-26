@@ -9,6 +9,9 @@ core = 7.x
 ; Contrib Modules
 ;-----------------------------------------
 
+; addressfield
+projects[addressfield][version] = "1.0-beta5"
+projects[addressfield][subdir] = "contrib"
 
 ; admin_menu requires bean
 projects[admin_menu][version] = "3.0-rc4"
@@ -17,6 +20,10 @@ projects[admin_menu][subdir] = "contrib"
 ; bean requires ctools, entity
 projects[bean][version] = "1.7"
 projects[bean][subdir] = "contrib"
+
+; commerce requires ctools 1.3+, views 3.7+, entity 1.3+, rules 2.6+, addressfield 1.0-beta5+
+projects[commerce][version] = "1.8"
+projects[commerce][subdir] = "contrib"
 
 ; context requires ctools 1.7+ (jquery_ui & admin recommended)
 projects[context][version] = "3.2"
@@ -48,6 +55,10 @@ projects[field_collection][patch][] = "https://drupal.org/files/issues/field_col
 ; pathauto requires token
 projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = "contrib"
+
+; rules
+projects[rules][version] = "2.6"
+projects[rules][subdir] = "contrib"
 
 ; strongarm requires ctools
 projects[strongarm][version] = "2.0"
