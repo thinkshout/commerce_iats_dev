@@ -25,7 +25,11 @@ projects[bean][subdir] = "contrib"
 projects[commerce][version] = "1.8"
 projects[commerce][subdir] = "contrib"
 
-; commerce_iats
+; commerce_cardonfile
+projects[commerce_cardonfile][version] = "2.0-beta2"
+projects[commerce_cardonfile][subdir] = "contrib"
+
+; commerce_iats optionally uses commerce_cardonfile
 projects[commerce_iats][version] = "2.x-dev"
 projects[commerce_iats][subdir] = "contrib"
 
