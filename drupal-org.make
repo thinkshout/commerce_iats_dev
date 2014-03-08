@@ -30,8 +30,15 @@ projects[commerce_cardonfile][version] = "2.0-beta2"
 projects[commerce_cardonfile][subdir] = "contrib"
 
 ; commerce_iats optionally uses commerce_cardonfile
-projects[commerce_iats][version] = "2.x-dev"
-projects[commerce_iats][subdir] = "contrib"
+;projects[commerce_iats][version] = "2.x-dev"
+;projects[commerce_iats][subdir] = "contrib"
+
+; commerce_iats
+projects[commerce_iats][type] = module
+projects[commerce_iats][download][type] = git
+projects[commerce_iats][download][branch] = 7.x-2.x
+projects[commerce_iats][download][url] = "git@github.com:thinkshout/commerce_iats.git"
+projects[commerce_iats][subdir] = commerce_iats
 
 ; context requires ctools 1.7+ (jquery_ui & admin recommended)
 projects[context][version] = "3.2"
@@ -121,3 +128,10 @@ libraries[chosen][download][url] = https://github.com/harvesthq/chosen.git
 libraries[chosen][directory_name] = "chosen"
 libraries[chosen][type] = "library"
 ;libraries[chosen][revision] = "333899ca51"
+
+; iatspayments
+projects[iatspayments][download][type] = git
+projects[iatspayments][download][branch] = master
+projects[iatspayments][download][url] = "git@github.com:iATSPayments/PHP.git"
+projects[iatspayments][directory_name] = "iatspayments"
+projects[iatspayments][type] = "library"
