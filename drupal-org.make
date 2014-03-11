@@ -132,6 +132,7 @@ libraries[chosen][type] = "library"
 ; iatspayments
 projects[iatspayments][download][type] = git
 projects[iatspayments][download][branch] = master
+projects[iatspayments][download][revision] = "05238ea504"
 projects[iatspayments][download][url] = "git@github.com:iATSPayments/PHP.git"
 projects[iatspayments][directory_name] = "iatspayments"
 projects[iatspayments][type] = "library"
