@@ -67,6 +67,10 @@ projects[field_collection][download][revision] = "0fd332e"
 ; Patch to fix On unpublished nodes, when saving, it throws a fatal error: Unable to save a field collection item without a valid reference: https://drupal.org/node/2070159
 projects[field_collection][patch][] = "https://drupal.org/files/issues/field_collection-fix_missing_host_entity-2070159-4.patch"
 
+; libraries
+projects[libraries][version] = "2.2"
+projects[libraries][subdir] = "contrib"
+
 ; pathauto requires token
 projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = "contrib"
