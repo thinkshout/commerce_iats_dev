@@ -36,7 +36,7 @@ projects[commerce_cardonfile][subdir] = "contrib"
 ; commerce_iats
 projects[commerce_iats][type] = module
 projects[commerce_iats][download][type] = git
-projects[commerce_iats][download][branch] = 7.x-2.x
+projects[commerce_iats][download][branch] = code-review
 projects[commerce_iats][download][url] = "git@github.com:thinkshout/commerce_iats.git"
 projects[commerce_iats][subdir] = contrib
 
@@ -136,7 +136,7 @@ libraries[chosen][type] = "library"
 ; iatspayments
 projects[iatspayments][download][type] = git
 projects[iatspayments][download][branch] = master
-projects[iatspayments][download][revision] = "05238ea504"
+projects[iatspayments][download][revision] = "5d73bc304a"
 projects[iatspayments][download][url] = "git@github.com:iATSPayments/PHP.git"
 projects[iatspayments][directory_name] = "iatspayments"
 projects[iatspayments][type] = "library"
