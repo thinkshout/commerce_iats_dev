@@ -36,8 +36,8 @@ projects[commerce_cardonfile][subdir] = "contrib"
 ; commerce_iats
 projects[commerce_iats][type] = module
 projects[commerce_iats][download][type] = git
-projects[commerce_iats][download][branch] = code-review
-projects[commerce_iats][download][url] = "git@github.com:thinkshout/commerce_iats.git"
+projects[commerce_iats][download][branch] = 7.x-2.x
+projects[commerce_iats][download][url] = "http://git.drupal.org/project/commerce_iats.git"
 projects[commerce_iats][subdir] = contrib
 
 ; context requires ctools 1.7+ (jquery_ui & admin recommended)
