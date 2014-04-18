@@ -109,7 +109,7 @@ fi
 
 # Build the profile.
 echo "Building the profile..."
-drush make --no-core --contrib-destination --no-gitinfofile drupal-org.make tmp
+drush make --working-copy --no-core --contrib-destination --no-gitinfofile drupal-org.make tmp
 
 # Build the distribution and copy the profile in place.
 echo "Building the distribution..."
