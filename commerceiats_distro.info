@@ -22,6 +22,7 @@ dependencies[] = bean
 dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = ctools
+dependencies[] = dc_co_pages
 dependencies[] = devel
 dependencies[] = diff
 dependencies[] = entity

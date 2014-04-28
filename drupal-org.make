@@ -48,6 +48,10 @@ projects[context][subdir] = "contrib"
 projects[ctools][version] = "1.4"
 projects[ctools][subdir] = "contrib"
 
+; dc_co_pages
+projects[dc_co_pages][version] = "1.0"
+projects[dc_co_pages][subdir] = "contrib"
+
 ; entity
 projects[entity][version] = "1.3"
 projects[entity][subdir] = "contrib"
