@@ -22,7 +22,7 @@ projects[bean][version] = "1.7"
 projects[bean][subdir] = "contrib"
 
 ; commerce requires ctools 1.3+, views 3.7+, entity 1.3+, rules 2.6+, addressfield 1.0-beta5+
-projects[commerce][version] = "1.8"
+projects[commerce][version] = "1.9"
 projects[commerce][subdir] = "contrib"
 
 ; commerce_cardonfile
@@ -53,7 +53,7 @@ projects[dc_co_pages][version] = "1.0"
 projects[dc_co_pages][subdir] = "contrib"
 
 ; entity
-projects[entity][version] = "1.3"
+projects[entity][version] = "1.5"
 projects[entity][subdir] = "contrib"
 
 ; entityreference
@@ -80,7 +80,7 @@ projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = "contrib"
 
 ; rules
-projects[rules][version] = "2.6"
+projects[rules][version] = "2.7"
 projects[rules][subdir] = "contrib"
 
 ; strongarm requires ctools
@@ -108,7 +108,7 @@ projects[views][subdir] = "contrib"
 ;-----------------------------------------
 
 ; devel
-projects[devel][version] = "1.4"
+projects[devel][version] = "1.5"
 projects[devel][subdir] = "developer"
 
 ; diff
