@@ -43,7 +43,7 @@ realpath () {
 }
 
 usage() {
-  echo "Usage: build.sh [-y] <DESTINATION_PATH> <DB_USER> <DB_PASS> <DB_NAME>" >&2
+  echo "Usage: build.sh [-y] <DESTINATION_PATH> <DB_USER> <DB_NAME>" >&2
   echo "Use -y to skip deletion confirmation" >&2
   echo "Install profile will only be run if db credentials are provided" >&2
   exit 1
@@ -51,8 +51,7 @@ usage() {
 
 DESTINATION=$1
 DBUSER=$2
-DBPASS=$3
-DB=$4
+DB=$3
 ASK=true
 
 while getopts ":y" opt; do
@@ -60,8 +59,7 @@ while getopts ":y" opt; do
     y)
       DESTINATION=$2
       DBUSER=$3
-      DBPASS=$4
-      DB=$5
+      DB=$4
       ASK=false
       ;;
     \?)
@@ -124,12 +122,7 @@ mv $TEMP_BUILD $DESTINATION
 if [ $DBUSER  ] && [ $DB ] ; then
   cd $DESTINATION
   echo "Running install profile"
-  if [$DBPASS] ; then
-    DBURL = "mysql://$DBUSER:$DBPASS@localhost/$DB"
-  else
-    DBURL = "mysql://$DBUSER@localhost/$DB"
-  fi
-  drush si $PROJECT --site-name=$SITENAME --db-url=$DBURL -y
+  drush si $PROJECT --site-name=$SITENAME --db-url=mysql://$DBUSER@localhost/$DB -y
 else
   echo "Skipping install profile"
 fi
