@@ -102,6 +102,8 @@ projects[views][subdir] = "contrib"
 ; Patch to fix notices for render arrays in blocks/panels: http://drupal.org/node/1925018#comment-7361230
 ;projects[ctools][patch][] = "http://drupal.org/files/ctools-1925018-61.patch"
 
+; Patch to fix error when creating a new checkout page: https://drupal.org/node/2261343
+projects[dc_co_pages][patch][] = "https://drupal.org/files/issues/dc_co_pages-new-page-array-index-2261343-2.patch"
 
 ;-----------------------------------------
 ; Developer tools
