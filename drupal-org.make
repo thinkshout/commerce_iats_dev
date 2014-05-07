@@ -129,18 +129,8 @@ libraries[ts_install_helpers][download][url] = git@github.com:thinkshout/ts_inst
 libraries[ts_install_helpers][directory_name] = "ts_install_helpers"
 libraries[ts_install_helpers][type] = "library"
 
-
-; chosen
-libraries[chosen][download][type] = git
-libraries[chosen][download][url] = https://github.com/harvesthq/chosen.git
-libraries[chosen][directory_name] = "chosen"
-libraries[chosen][type] = "library"
-;libraries[chosen][revision] = "333899ca51"
-
 ; iatspayments
-projects[iatspayments][download][type] = git
-projects[iatspayments][download][branch] = master
-projects[iatspayments][download][revision] = "5d73bc304a"
-projects[iatspayments][download][url] = "git@github.com:iATSPayments/PHP.git"
+projects[iatspayments][download][type] = "get"
+projects[iatspayments][download][url] = "https://github.com/iATSPayments/PHP/archive/v1.0.tar.gz"
 projects[iatspayments][directory_name] = "iatspayments"
-projects[iatspayments][type] = "library"
+libraries[chosen][destination] = "libraries"
