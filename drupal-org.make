@@ -92,7 +92,7 @@ projects[token][version] = "1.5"
 projects[token][subdir] = "contrib"
 
 ; views
-projects[views][version] = "3.7"
+projects[views][version] = "3.8"
 projects[views][subdir] = "contrib"
 
 ;-----------------------------------------
