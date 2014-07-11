@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Commerce iATS Commerce feature.
+ */
+
+include_once 'commerceiats_commerce.features.inc';
