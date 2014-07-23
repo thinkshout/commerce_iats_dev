@@ -36,7 +36,7 @@ projects[commerce_cardonfile][subdir] = "contrib"
 ; commerce_iats
 projects[commerce_iats][type] = module
 projects[commerce_iats][download][type] = git
-projects[commerce_iats][download][branch] = 7.x-2.x
+projects[commerce_iats][download][branch] = 7.x-2.x-direct_post
 projects[commerce_iats][download][url] = "git@git.drupal.org:project/commerce_iats.git"
 projects[commerce_iats][subdir] = contrib
 
