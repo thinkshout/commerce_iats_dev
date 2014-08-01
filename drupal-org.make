@@ -26,7 +26,7 @@ projects[commerce][version] = "1.9"
 projects[commerce][subdir] = "contrib"
 
 ; commerce_cardonfile
-projects[commerce_cardonfile][version] = "2.0-beta2"
+projects[commerce_cardonfile][version] = "2.0-beta5"
 projects[commerce_cardonfile][subdir] = "contrib"
 
 ; commerce_iats optionally uses commerce_cardonfile
