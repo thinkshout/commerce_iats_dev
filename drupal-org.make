@@ -30,7 +30,7 @@ projects[commerce_cardonfile][version] = "2.0-beta5"
 projects[commerce_cardonfile][subdir] = "contrib"
 
 ; commerce_iats
-projects[commerce_iats][version] = "2.3"
+projects[commerce_iats][version] = "2.4"
 projects[commerce_iats][subdir] = "contrib"
 
 ; context requires ctools 1.7+ (jquery_ui & admin recommended)
