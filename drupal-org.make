@@ -102,6 +102,9 @@ projects[views][subdir] = "contrib"
 ; Patch to fix error when creating a new checkout page: https://drupal.org/node/2261343
 projects[dc_co_pages][patch][] = "https://drupal.org/files/issues/dc_co_pages-new-page-array-index-2261343-2.patch"
 
+; Patch to fix ignored payment method callbacks when in an external file
+projects[commerce_cardonfile][patch][] = "https://www.drupal.org/files/issues/commerce_cardonfile-account-for-callback-include-files-2314063-1.patch"
+
 ;-----------------------------------------
 ; Developer tools
 ;-----------------------------------------
