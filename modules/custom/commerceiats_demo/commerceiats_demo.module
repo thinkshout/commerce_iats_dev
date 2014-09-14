@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Commerce iATS Demo feature.
  */
+
+include_once 'commerceiats_demo.features.inc';
