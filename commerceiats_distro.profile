@@ -8,7 +8,7 @@
 function commerceiats_install_tasks(){
   $taskset = array(
     'commerceiats_custom_install' => array(
-      'display_name' => st('iATS Commerce Site Setup'),
+      'display_name' => st('Commerce iATS Installation'),
     ),
   );
   return $taskset;
