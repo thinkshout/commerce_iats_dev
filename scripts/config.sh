@@ -6,6 +6,6 @@ PROJECT=commerceiats_distro
 # pantheon, acquia, generic
 HOSTTYPE=pantheon
 
-SITENAME="iATS Drupal Commerce"
+SITENAME="Commerce iATS"
 
 GITREPO=
