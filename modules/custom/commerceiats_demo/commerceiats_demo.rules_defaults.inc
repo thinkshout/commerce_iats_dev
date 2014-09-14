@@ -12,7 +12,6 @@ function commerceiats_demo_default_rules_configuration() {
   $items['commerce_payment_iats_payments_ach_eft_payment_demo'] = entity_import('rules_config', '{ "commerce_payment_iats_payments_ach_eft_payment_demo" : {
       "LABEL" : "iATS Payments: ACH\\/EFT payment demo",
       "PLUGIN" : "reaction rule",
-      "ACTIVE" : false,
       "OWNER" : "rules",
       "TAGS" : [ "Commerce Payment" ],
       "REQUIRES" : [ "commerce_payment" ],
