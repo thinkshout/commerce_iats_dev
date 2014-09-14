@@ -121,15 +121,10 @@ cp -r . $TEMP_BUILD/profiles/$PROJECT
 mv $TEMP_BUILD $DESTINATION
 
 # run the install profile
-if [ $DBUSER  ] && [ $DB ] ; then
+if [ $DBUSER  ] && [ $DBPASS ] && [ $DB ] ; then
   cd $DESTINATION
   echo "Running install profile"
-  if [$DBPASS] ; then
-    DBURL = "mysql://$DBUSER:$DBPASS@localhost/$DB"
-  else
-    DBURL = "mysql://$DBUSER@localhost/$DB"
-  fi
-  drush si $PROJECT --site-name=$SITENAME --db-url=$DBURL -y
+  drush si $PROJECT --site-name=$SITENAME --db-url=mysql://$DBUSER:$DBPASS@localhost/$DB -y
 else
   echo "Skipping install profile"
 fi
