@@ -1,0 +1,3 @@
+name = Commerce iATS Examples
+description = Examples for use with the Commerce iATS module.
+core = 7.x
