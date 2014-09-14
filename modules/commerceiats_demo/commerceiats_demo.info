@@ -1,0 +1,8 @@
+name = Commerce iATS Demo
+description = Features configuration used to demo the Commerce iATS module.
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = commerceiats_demo
+features[features_api][] = api:2
+project path = profiles/commerceiats_distro/modules
