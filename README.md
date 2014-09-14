@@ -20,12 +20,12 @@ git clone git@github.com:thinkshout/commerce_iats_dev.git commerceiats_distro
 
 * Create a new MySQL database for this Drupal installation.
 ```bash
-mysql -h [host] -u [username] -p
+mysql -h [mysql_host] -u [mysql_username] -p
 create database [database_name]
 ```
 
 * Build and install Drupal with Commerce iATS
 ```bash
 cd commerceiats_distro
-./scripts/build.sh  [target_directory]
+./scripts/build.sh [target_directory] [mysql_username] [mysql_password] [database_name]
 ```
