@@ -22,8 +22,9 @@ projects[bean][version] = "1.7"
 projects[bean][subdir] = "contrib"
 
 ; commerce requires ctools 1.3+, views 3.7+, entity 1.3+, rules 2.6+, addressfield 1.0-beta5+
-projects[commerce][version] = "1.9"
 projects[commerce][subdir] = "contrib"
+projects[commerce][download][type] = git
+projects[commerce][download][revision] = "05a017a"
 
 ; commerce_cardonfile
 projects[commerce_cardonfile][version] = "2.0-beta5"
