@@ -57,6 +57,7 @@ dependencies[] = commerce_cardonfile
 dependencies[] = commerce_iats
 
 ; custom
+dependencies[] = commerceiats_demo
 dependencies[] = commerceiats_examples
 
 files[] = commerceiats_distro.profile
