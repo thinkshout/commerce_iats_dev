@@ -5,6 +5,7 @@
  */
 function commerceiats_demo_install() {
   commerceiats_demo_create_products();
+  commerceiats_demo_create_checkout_pages();
 }
 
 /**
@@ -61,4 +62,14 @@ function commerceiats_demo_create_products() {
   );
 
   commerce_product_save($product);
+}
+
+function commerceiats_demo_create_checkout_pages() {
+  $page = array(
+    'id' => 'recurring_payment',
+    'title' => 'Recurring Payment',
+    'buttons' => 1,
+  );
+
+  dc_co_pages_page_save($page);
 }
