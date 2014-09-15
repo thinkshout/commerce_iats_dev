@@ -1,1 +1,22 @@
 <?php
+
+/**
+ * Implements hook_commerce_checkout_pane_info_alter().
+ */
+function commerceiats_demo_direct_debit_commerce_checkout_pane_info_alter(&$checkout_panes) {
+  // Disable non-Direct Debit checkout panes.
+  $checkout_panes['cart_contents']['page'] = 'disabled';
+  $checkout_panes['account']['page'] = 'disabled';
+  $checkout_panes['customer_profile_billing']['page'] = 'disabled';
+  $checkout_panes['checkout_review']['page'] = 'disabled';
+  $checkout_panes['commerce_payment']['page'] = 'disabled';
+  $checkout_panes['checkout_completion_message']['page'] = 'disabled';
+
+  // Assign Direct Debit checkout panes to the correct pages.
+  $checkout_panes['checkout_recurring']['page'] = 'checkout';
+  $checkout_panes['checkout_direct_debit_declaration']['page'] = 'declaration';
+  $checkout_panes['checkout_direct_debit_account_payer']['page'] = 'account_details';
+  $checkout_panes['checkout_direct_debit_validation']['page'] = 'confirmation';
+  $checkout_panes['checkout_direct_debit_summary']['page'] = 'review';
+  $checkout_panes['checkout_direct_debit_complete']['page'] = 'complete';
+}

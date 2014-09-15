@@ -1,1 +1,30 @@
 <?php
+
+/**
+ * Implements hook_install().
+ */
+function commerceiats_demo_direct_debit_install() {
+  commerceiats_demo_direct_debit_create_checkout_pages();
+}
+
+function commerceiats_demo_direct_debit_create_checkout_pages() {
+  $pages = array(
+    'declaration' => 'Declaration',
+    'account_details' => 'Account Details',
+    'confirmation' => 'Confirmation',
+  );
+
+  $weight = 0;
+  foreach ($pages as $page_id => $title) {
+    $page = array(
+      'id' => $page_id,
+      'title' => $title,
+      'weight' => $weight,
+      'buttons' => 1,
+    );
+
+    dc_co_pages_page_save($page);
+
+    $weight++;
+  }
+}
