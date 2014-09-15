@@ -1,8 +1,13 @@
 name = Commerce iATS Demo Direct Debit
-description = Content used to demo Direct Debit in the Commerce iATS module.
 core = 7.x
 package = Features
 version = 7.x-1.0
-project = commerceiats_demo
-
+project = commerceiats_demo_direct_debit
 dependencies[] = commerceiats_demo
+dependencies[] = commerce_payment
+dependencies[] = entity
+dependencies[] = rules
+features[features_api][] = api:2
+features[rules_config][] = commerce_payment_iats_direct_debit_customer_code_creation_demo
+features[rules_config][] = commerce_payment_iats_direct_debit_payment_validation_demo
+project path = profiles/commerceiats_distro/modules/custom

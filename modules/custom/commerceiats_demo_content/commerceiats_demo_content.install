@@ -63,4 +63,15 @@ function commerceiats_demo_content_create_content() {
   $entity_wrapper->field_product->set($product->product_id);
 
   $entity_wrapper->save();
+
+  // Create GBP recurring donation test product display.
+  $product = commerce_product_load_by_sku('TEST_GBP_002');
+
+  $entity = entity_create('node', $default_product_values);
+  $entity_wrapper = entity_metadata_wrapper('node', $entity);
+
+  $entity_wrapper->title->set('Test Recurring Donation Product (GBP)');
+  $entity_wrapper->field_product->set($product->product_id);
+
+  $entity_wrapper->save();
 }
