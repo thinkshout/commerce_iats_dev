@@ -4,7 +4,14 @@
  * Implements hook_install().
  */
 function commerceiats_demo_install() {
+  commerceiats_demo_create_products();
+  commerceiats_demo_create_content();
+}
 
+/**
+ * Creates products used to demo Commerce iATS.
+ */
+function commerceiats_demo_create_products() {
   // Create USD test product.
   $product = commerce_product_new('product');
   $product->uid = 1;
@@ -55,4 +62,11 @@ function commerceiats_demo_install() {
   );
 
   commerce_product_save($product);
+}
+
+/**
+ * Creates content used to demo Commerce iATS.
+ */
+function commerceiats_demo_create_content() {
+
 }
