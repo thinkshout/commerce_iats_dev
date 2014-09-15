@@ -20,3 +20,21 @@ function commerceiats_demo_direct_debit_commerce_checkout_pane_info_alter(&$chec
   $checkout_panes['checkout_direct_debit_summary']['page'] = 'review';
   $checkout_panes['checkout_direct_debit_complete']['page'] = 'complete';
 }
+
+/**
+ * Populates Direct Debit checkout form fields with test data.
+ */
+function commerceiats_demo_form_commerce_checkout_form_account_details_alter(&$form, &$form_state, $form_id) {
+  $form['checkout_direct_debit_account_payer']['account']['account_holder']['#default_value'] = 'Test User';
+  $form['checkout_direct_debit_account_payer']['account']['number']['#default_value'] = '12345678';
+  $form['checkout_direct_debit_account_payer']['account']['sort_code']['#default_value'] = '000000';
+
+  $form['checkout_direct_debit_account_payer']['payer']['company_name']['#default_value'] = 'Company';
+  $form['checkout_direct_debit_account_payer']['payer']['first_name']['#default_value'] = 'Test';
+  $form['checkout_direct_debit_account_payer']['payer']['last_name']['#default_value'] = 'User';
+  $form['checkout_direct_debit_account_payer']['payer']['address_1']['#default_value'] = '123 Any Street';
+  $form['checkout_direct_debit_account_payer']['payer']['town']['#default_value'] = 'Town';
+  $form['checkout_direct_debit_account_payer']['payer']['postcode']['#default_value'] = 'AA1 1AA';
+  $form['checkout_direct_debit_account_payer']['payer']['email']['#default_value'] = 'user@example.org';
+  $form['checkout_direct_debit_account_payer']['payer']['confirm_email']['#default_value'] = 'user@example.org';
+}
