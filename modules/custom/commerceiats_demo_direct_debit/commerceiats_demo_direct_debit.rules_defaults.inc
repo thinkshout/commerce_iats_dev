@@ -22,8 +22,8 @@ function commerceiats_demo_direct_debit_default_rules_configuration() {
             "payment_method" : { "value" : {
                 "method_id" : "direct_debit_customer_code",
                 "settings" : {
-                  "agent_code" : "TEST88",
-                  "agent_password" : "TEST88",
+                  "agent_code" : "UDDD88",
+                  "agent_password" : "UDDD888",
                   "server" : "UK",
                   "log" : { "request" : "request", "response" : "response" },
                   "detailed_failure_message" : 1
@@ -48,8 +48,8 @@ function commerceiats_demo_direct_debit_default_rules_configuration() {
             "payment_method" : { "value" : {
                 "method_id" : "direct_debit_validation",
                 "settings" : {
-                  "agent_code" : "TEST88",
-                  "agent_password" : "TEST88",
+                  "agent_code" : "UDDD88",
+                  "agent_password" : "UDDD888",
                   "server" : "UK",
                   "log" : { "request" : "request", "response" : "response" },
                   "detailed_failure_message" : 1,
