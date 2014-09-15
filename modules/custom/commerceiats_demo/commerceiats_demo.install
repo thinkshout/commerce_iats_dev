@@ -68,6 +68,7 @@ function commerceiats_demo_create_checkout_pages() {
   $page = array(
     'id' => 'recurring_payment',
     'title' => 'Recurring Payment',
+    'weight' => 99,
     'buttons' => 1,
   );
 
