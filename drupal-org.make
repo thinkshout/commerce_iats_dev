@@ -27,8 +27,9 @@ projects[commerce][download][type] = git
 projects[commerce][download][revision] = "05a017a"
 
 ; commerce_cardonfile
-projects[commerce_cardonfile][version] = "2.0-beta5"
 projects[commerce_cardonfile][subdir] = "contrib"
+projects[commerce_cardonfile][download][type] = git
+projects[commerce_cardonfile][download][revision] = "3263f5d"
 
 ; commerce_iats
 projects[commerce_iats][version] = "2.4"
@@ -98,9 +99,6 @@ projects[views][subdir] = "contrib"
 
 ; Patch to fix error when creating a new checkout page: https://drupal.org/node/2261343
 projects[dc_co_pages][patch][] = "https://drupal.org/files/issues/dc_co_pages-new-page-array-index-2261343-2.patch"
-
-; Patch to fix ignored payment method callbacks when in an external file
-projects[commerce_cardonfile][patch][] = "https://www.drupal.org/files/issues/commerce_cardonfile-account-for-callback-include-files-2314063-1.patch"
 
 ;-----------------------------------------
 ; Developer tools
