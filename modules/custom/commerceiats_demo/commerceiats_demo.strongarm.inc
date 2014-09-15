@@ -13,6 +13,13 @@ function commerceiats_demo_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'commerce_customer_profile_billing_field';
+  $strongarm->value = 'commerce_customer_billing';
+  $export['commerce_customer_profile_billing_field'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'commerce_enabled_currencies';
   $strongarm->value = array(
     'CAD' => 'CAD',
