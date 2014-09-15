@@ -79,6 +79,23 @@ function commerceiats_demo_create_products() {
   );
 
   commerce_product_save($product);
+
+  // Create GBP recurring donation test product.
+  $product = commerce_product_new('product');
+  $product->uid = 1;
+  $product->sku = 'TEST_GBP_002';
+  $product->title = 'Test Recurring Donation Product (GBP)';
+  $product->language = LANGUAGE_NONE;
+  $product->commerce_price = array(
+    LANGUAGE_NONE => array(
+      0 => array(
+        'amount' => 0,
+        'currency_code' => 'GBP',
+      ),
+    ),
+  );
+
+  commerce_product_save($product);
 }
 
 function commerceiats_demo_create_checkout_pages() {
