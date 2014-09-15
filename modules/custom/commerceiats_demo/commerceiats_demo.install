@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function commerceiats_demo_install() {
+
+  // Create USD test product.
+  $product = commerce_product_new('product');
+  $product->uid = 1;
+  $product->sku = 'TEST_USD_001';
+  $product->title = 'Test Product (USD)';
+  $product->language = LANGUAGE_NONE;
+  $product->commerce_price = array(
+    LANGUAGE_NONE => array(
+      0 => array(
+        'amount' => 1500,
+        'currency_code' => 'USD',
+      ),
+    ),
+  );
+
+  commerce_product_save($product);
+
+  // Create CAD test product.
+  $product = commerce_product_new('product');
+  $product->uid = 1;
+  $product->sku = 'TEST_CAD_001';
+  $product->title = 'Test Product (CAD)';
+  $product->language = LANGUAGE_NONE;
+  $product->commerce_price = array(
+    LANGUAGE_NONE => array(
+      0 => array(
+        'amount' => 1500,
+        'currency_code' => 'CAD',
+      ),
+    ),
+  );
+
+  commerce_product_save($product);
+
+  // Create GBP test product.
+  $product = commerce_product_new('product');
+  $product->uid = 1;
+  $product->sku = 'TEST_GBP_001';
+  $product->title = 'Test Product (GBP)';
+  $product->language = LANGUAGE_NONE;
+  $product->commerce_price = array(
+    LANGUAGE_NONE => array(
+      0 => array(
+        'amount' => 1500,
+        'currency_code' => 'GBP',
+      ),
+    ),
+  );
+
+  commerce_product_save($product);
+}
