@@ -21,7 +21,7 @@ function commerceiats_demo_create_products() {
   $product->commerce_price = array(
     LANGUAGE_NONE => array(
       0 => array(
-        'amount' => 1500,
+        'amount' => 800,
         'currency_code' => 'USD',
       ),
     ),
@@ -38,7 +38,7 @@ function commerceiats_demo_create_products() {
   $product->commerce_price = array(
     LANGUAGE_NONE => array(
       0 => array(
-        'amount' => 1500,
+        'amount' => 800,
         'currency_code' => 'CAD',
       ),
     ),
@@ -55,7 +55,7 @@ function commerceiats_demo_create_products() {
   $product->commerce_price = array(
     LANGUAGE_NONE => array(
       0 => array(
-        'amount' => 1500,
+        'amount' => 800,
         'currency_code' => 'GBP',
       ),
     ),
