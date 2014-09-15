@@ -20,3 +20,42 @@ function commerceiats_demo_commerce_checkout_pane_info_alter(&$checkout_panes) {
   // Assign recurring payment pane to the correct page.
   $checkout_panes['checkout_recurring']['page'] = 'recurring_payment';
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Sets default payment form values for demo purposes.
+ */
+function commerceiats_demo_form_commerce_checkout_form_review_alter(&$form, &$form_state, $form_id) {
+  if (isset($form['commerce_payment']['payment_details']['credit_card'])) {
+    if (isset($form['commerce_payment']['payment_details']['credit_card']['type'])) {
+      $form['commerce_payment']['payment_details']['credit_card']['type']['#default_value'] = 'visa';
+    }
+    if (isset($form['commerce_payment']['payment_details']['credit_card']['number'])) {
+      $form['commerce_payment']['payment_details']['credit_card']['number']['#default_value'] = '4222222222222220';
+    }
+    if (isset($form['commerce_payment']['payment_details']['credit_card']['code'])) {
+      $form['commerce_payment']['payment_details']['credit_card']['code']['#default_value'] = '000';
+    }
+  }
+  else if (isset($form['commerce_payment']['payment_details']['bank_account'])) {
+    if (isset($form['commerce_payment']['payment_details']['bank_account']['bank_number'])) {
+      $form['commerce_payment']['payment_details']['bank_account']['bank_number']['#default_value'] = '000';
+    }
+    if (isset($form['commerce_payment']['payment_details']['bank_account']['transit_number'])) {
+      $form['commerce_payment']['payment_details']['bank_account']['transit_number']['#default_value'] = '00000';
+    }
+    if (isset($form['commerce_payment']['payment_details']['bank_account']['number'])) {
+      $form['commerce_payment']['payment_details']['bank_account']['number']['#default_value'] = '12345678';
+    }
+    if (isset($form['commerce_payment']['payment_details']['bank_account']['sort_code'])) {
+      $form['commerce_payment']['payment_details']['bank_account']['sort_code']['#default_value'] = '000000';
+    }
+    if (isset($form['commerce_payment']['payment_details']['bank_account']['routing_number'])) {
+      $form['commerce_payment']['payment_details']['bank_account']['routing_number']['#default_value'] = '000000000';
+    }
+    if (isset($form['commerce_payment']['payment_details']['bank_account']['type'])) {
+      $form['commerce_payment']['payment_details']['bank_account']['type']['#default_value'] = 'CHECKING';
+    }
+  }
+}
