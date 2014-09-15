@@ -5,3 +5,18 @@
  */
 
 include_once 'commerceiats_demo.features.inc';
+
+/**
+ * Implements hook_commerce_checkout_pane_info_alter().
+ */
+function commerceiats_demo_commerce_checkout_pane_info_alter(&$checkout_panes) {
+  // Disable Direct Debit checkout panes.
+  $checkout_panes['checkout_direct_debit_declaration']['page'] = 'disabled';
+  $checkout_panes['checkout_direct_debit_account_payer']['page'] = 'disabled';
+  $checkout_panes['checkout_direct_debit_validation']['page'] = 'disabled';
+  $checkout_panes['checkout_direct_debit_summary']['page'] = 'disabled';
+  $checkout_panes['checkout_direct_debit_complete']['page'] = 'disabled';
+
+  // Assign recurring payment pane to the correct page.
+  $checkout_panes['checkout_recurring']['page'] = 'recurring_payment';
+}
