@@ -62,6 +62,23 @@ function commerceiats_demo_create_products() {
   );
 
   commerce_product_save($product);
+
+  // Create USD recurring donation test product.
+  $product = commerce_product_new('product');
+  $product->uid = 1;
+  $product->sku = 'TEST_USD_002';
+  $product->title = 'Test Recurring Donation Product (USD)';
+  $product->language = LANGUAGE_NONE;
+  $product->commerce_price = array(
+    LANGUAGE_NONE => array(
+      0 => array(
+        'amount' => 0,
+        'currency_code' => 'USD',
+      ),
+    ),
+  );
+
+  commerce_product_save($product);
 }
 
 function commerceiats_demo_create_checkout_pages() {
