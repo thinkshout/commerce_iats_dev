@@ -1,0 +1,8 @@
+name = Commerce iATS Demo Content
+description = Content used to demo the Commerce iATS module.
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = commerceiats_demo
+
+dependencies[] = commerceiats_demo

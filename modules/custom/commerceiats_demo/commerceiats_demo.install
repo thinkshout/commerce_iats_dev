@@ -5,7 +5,6 @@
  */
 function commerceiats_demo_install() {
   commerceiats_demo_create_products();
-  commerceiats_demo_create_content();
 }
 
 /**
@@ -62,11 +61,4 @@ function commerceiats_demo_create_products() {
   );
 
   commerce_product_save($product);
-}
-
-/**
- * Creates content used to demo Commerce iATS.
- */
-function commerceiats_demo_create_content() {
-
 }
