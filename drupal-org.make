@@ -35,7 +35,7 @@ projects[commerce_cardonfile][download][revision] = "3263f5d"
 projects[commerce_iats][subdir] = "contrib"
 projects[commerce_iats][download][type] = git
 projects[commerce_iats][download][branch] = "7.x-2.x-usb_reader"
-projects[commerce_iats][download][revision] = "9423ee5"
+projects[commerce_iats][download][revision] = "f983942"
 
 ; context requires ctools 1.7+ (jquery_ui & admin recommended)
 projects[context][version] = "3.2"
