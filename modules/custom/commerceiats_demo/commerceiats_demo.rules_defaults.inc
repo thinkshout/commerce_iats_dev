@@ -102,8 +102,10 @@ function commerceiats_demo_default_rules_configuration() {
                 "settings" : {
                   "agent_code" : "TEST88",
                   "agent_password" : "TEST88",
-                  "direct_post" : 0,
-                  "process_key" : "",
+                  "direct_post" : {
+                    "enable_direct_post" : 0,
+                    "process_key" : "PA0940D765F2BD67BD97B82EFAA4D72BE9"
+                  },
                   "server" : "NA",
                   "log" : { "request" : "request", "response" : "response" },
                   "detailed_failure_message" : 1,
@@ -131,8 +133,10 @@ function commerceiats_demo_default_rules_configuration() {
                 "settings" : {
                   "agent_code" : "TEST88",
                   "agent_password" : "TEST88",
-                  "direct_post" : 0,
-                  "process_key" : "",
+                  "direct_post" : {
+                    "enable_direct_post" : 0,
+                    "process_key" : "PA0940D765F2BD67BD97B82EFAA4D72BE9"
+                  },
                   "server" : "NA",
                   "log" : { "request" : "request", "response" : "response" },
                   "detailed_failure_message" : 1,
