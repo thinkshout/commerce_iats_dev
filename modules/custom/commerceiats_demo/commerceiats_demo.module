@@ -58,4 +58,15 @@ function commerceiats_demo_form_commerce_checkout_form_review_alter(&$form, &$fo
       $form['commerce_payment']['payment_details']['bank_account']['type']['#default_value'] = 'CHECKING';
     }
   }
+  else if (isset($form['commerce_payment']['payment_details']['iats_dpm_relay_url'])) {
+    if (isset($form['commerce_payment']['payment_details']['iats_dpm_mop'])) {
+      $form['commerce_payment']['payment_details']['iats_dpm_mop']['#default_value'] = 'VISA';
+    }
+    if (isset($form['commerce_payment']['payment_details']['iats_dpm_account_number'])) {
+      $form['commerce_payment']['payment_details']['iats_dpm_account_number']['#default_value'] = '4222222222222220';
+    }
+    if (isset($form['commerce_payment']['payment_details']['iats_dpm_cvv2'])) {
+      $form['commerce_payment']['payment_details']['iats_dpm_cvv2']['#default_value'] = '000';
+    }
+  }
 }
