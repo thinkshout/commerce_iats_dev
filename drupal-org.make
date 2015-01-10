@@ -30,6 +30,8 @@ projects[commerce][download][revision] = "05a017a"
 projects[commerce_cardonfile][subdir] = "contrib"
 projects[commerce_cardonfile][download][type] = git
 projects[commerce_cardonfile][download][revision] = "3263f5d"
+; Patch to fix return value of commerce_cardonfile_save(). See: https://www.drupal.org/node/2404971
+projects[commerce_cardonfile][patch][] = "https://www.drupal.org/files/issues/commerce_cardonfile-fix-commerce_cardonfile_save-return-type-2404971-2.patch"
 
 ; commerce_iats
 projects[commerce_iats][version] = "2.5"
