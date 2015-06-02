@@ -38,11 +38,11 @@ projects[commerce_iats][version] = "2.10"
 projects[commerce_iats][subdir] = "contrib"
 
 ; context requires ctools 1.7+ (jquery_ui & admin recommended)
-projects[context][version] = "3.2"
+projects[context][version] = "3.6"
 projects[context][subdir] = "contrib"
 
 ; ctools
-projects[ctools][version] = "1.4"
+projects[ctools][version] = "1.7"
 projects[ctools][subdir] = "contrib"
 
 ; dc_co_pages
@@ -50,7 +50,7 @@ projects[dc_co_pages][version] = "1.0"
 projects[dc_co_pages][subdir] = "contrib"
 
 ; entity
-projects[entity][version] = "1.5"
+projects[entity][version] = "1.6"
 projects[entity][subdir] = "contrib"
 
 ; entityreference
@@ -89,7 +89,7 @@ projects[token][version] = "1.5"
 projects[token][subdir] = "contrib"
 
 ; views
-projects[views][version] = "3.8"
+projects[views][version] = "3.11"
 projects[views][subdir] = "contrib"
 
 ;-----------------------------------------
