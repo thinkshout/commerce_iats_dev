@@ -130,6 +130,6 @@ libraries[ts_install_helpers][type] = "library"
 
 ; iatspayments
 libraries[iatspayments][download][type] = "get"
-libraries[iatspayments][download][url] = "https://github.com/iATSPayments/PHP/archive/v2.0.tar.gz"
+libraries[iatspayments][download][url] = "https://github.com/iATSPayments/PHP/archive/2.0.tar.gz"
 libraries[iatspayments][directory_name] = "iatspayments"
 libraries[iatspayments][type] = "library"
