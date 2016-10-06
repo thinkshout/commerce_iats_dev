@@ -42,7 +42,7 @@ projects[context][version] = "3.6"
 projects[context][subdir] = "contrib"
 
 ; ctools
-projects[ctools][version] = "1.7"
+projects[ctools][version] = "1.10"
 projects[ctools][subdir] = "contrib"
 
 ; dc_co_pages
@@ -58,7 +58,7 @@ projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = "contrib"
 
 ; features
-projects[features][version] = "2.0"
+projects[features][version] = "2.10"
 projects[features][subdir] = "contrib"
 
 ; field_collection
@@ -89,7 +89,7 @@ projects[token][version] = "1.5"
 projects[token][subdir] = "contrib"
 
 ; views
-projects[views][version] = "3.11"
+projects[views][version] = "3.14"
 projects[views][subdir] = "contrib"
 
 ;-----------------------------------------
