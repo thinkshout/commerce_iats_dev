@@ -34,7 +34,7 @@ projects[commerce_cardonfile][download][revision] = "3263f5d"
 projects[commerce_cardonfile][patch][] = "https://www.drupal.org/files/issues/commerce_cardonfile-fix-commerce_cardonfile_save-return-type-2404971-2.patch"
 
 ; commerce_iats
-projects[commerce_iats][version] = "2.10"
+projects[commerce_iats][version] = "2.12"
 projects[commerce_iats][subdir] = "contrib"
 
 ; context requires ctools 1.7+ (jquery_ui & admin recommended)
